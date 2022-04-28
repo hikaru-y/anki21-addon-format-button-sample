@@ -5,8 +5,3 @@ declare module "anki/NoteEditor" {
     export const lifecycle: import("@anki/sveltelib/lifecycle-hooks").LifecycleHooks<NoteEditorAPI>;
     export const instances: NoteEditorAPI[];
 }
-
-declare module "*.svg" {
-    const content: string;
-    export default content;
-}

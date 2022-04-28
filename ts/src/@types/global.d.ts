@@ -1,12 +1,10 @@
-// import { components } from "@anki/editor/base";
-
-// declare global {
-//     interface Window {
-//         components: typeof components;
-//     }
-// }
 declare global {
+    interface DocumentOrShadowRoot {
+        getSelection(): Selection | null;
+    }
+
     // eslint-disable-next-line no-var
     var components: typeof import("@anki/editor/base").components;
 }
+
 export {};
