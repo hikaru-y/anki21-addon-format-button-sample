@@ -12,25 +12,24 @@
         "**/.mypy_cache/": true
     },
     "files.insertFinalNewline": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/anki/*/**": true
+    },
+    "git.ignoredRepositories": ["c:/anki", "c:/bazel"],
     "git.ignoreLimitWarning": true,
     "git.untrackedChanges": "hidden",
-    "python.analysis.extraPaths": [
-        "C:/anki/qt/",
-        "C:/anki/pylib"
-    ],
+    "python.analysis.extraPaths": ["C:/anki/qt/", "C:/anki/pylib"],
     "python.formatting.provider": "black",
     "python.linting.enabled": true,
-    "python.linting.flake8Args": [
-        "--config=.flake8"
-    ],
+    "python.linting.flake8Args": ["--config=.flake8"],
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
     "search.exclude": {
-        ".vscode/": true
+        ".vscode/": true,
+        "**/node_modules/": true
     },
-    "workbench.editor.enablePreview": false,
-    "git.ignoredRepositories": [
-        "c:/anki",
-        "c:/bazel"
-    ]
+    "workbench.editor.enablePreview": false
 }
